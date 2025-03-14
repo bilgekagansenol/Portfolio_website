@@ -204,7 +204,7 @@ const BiosScreen = () => {
         </BiosRow>
         <BiosRow>
           <BiosLabel>Department</BiosLabel>
-          <BiosValue>Artificial Intelligence and Data Science</BiosValue>
+          <BiosValue>Computer Engineering</BiosValue>
         </BiosRow>
         <BiosRow>
           <BiosLabel>Relevant Courses</BiosLabel>
