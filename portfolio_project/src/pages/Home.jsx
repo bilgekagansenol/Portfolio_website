@@ -43,9 +43,9 @@ const Home = () => {
                 <Link to="/contact" className="btn btn-primary">
                   Get In Touch
                 </Link>
-                <button className="btn btn-secondary" onClick={() => alert('CV will be available soon!')}>
+                <a href="/Bilge_Kagan_Senol_CV.pdf" download="Bilge_Kagan_Senol_CV.pdf" className="btn btn-secondary">
                   <Download /> Download CV
-                </button>
+                </a>
               </div>
               <div className="hero-social">
                 <a
