@@ -14,13 +14,13 @@ import './Home.css';
 const Home = () => {
   const skills = [
     { name: 'Python', level: 95, category: 'Programming' },
-    { name: 'JavaScript', level: 80, category: 'Programming' },
-    { name: 'Java', level: 75, category: 'Programming' },
-    { name: 'C', level: 90, category: 'Programming' },
-    { name: 'Machine Learning', level: 90, category: 'AI/Data Science' },
-    { name: 'NLP', level: 85, category: 'AI/Data Science' },
-    { name: 'React', level: 80, category: 'Web Development' },
-    { name: 'Spring Boot', level: 75, category: 'Backend' },
+    { name: 'PyTorch', level: 90, category: 'AI/ML' },
+    { name: 'Django/DRF', level: 90, category: 'Backend' },
+    { name: 'Computer Vision', level: 85, category: 'AI/ML' },
+    { name: 'LLMs & RAG', level: 90, category: 'AI/ML' },
+    { name: 'React', level: 80, category: 'Frontend' },
+    { name: 'C', level: 85, category: 'Programming' },
+    { name: 'SQL', level: 80, category: 'Database' },
   ];
 
   return (
@@ -32,11 +32,12 @@ const Home = () => {
             <div className="hero-text">
               <p className="hero-greeting">Hello, I'm</p>
               <h1 className="hero-name">Bilge Kağan Şenol</h1>
-              <h2 className="hero-title">AI & Data Science Developer</h2>
+              <h2 className="hero-title">AI Engineer & Computer Engineer</h2>
               <p className="hero-description">
-                Computer Engineering student at Yasar University specializing in
-                Artificial Intelligence, Machine Learning, and Natural Language Processing.
-                Passionate about building intelligent systems and solving complex problems.
+                Computer Engineering graduate from Yasar University specializing in
+                AI systems, LLMs, computer vision, and backend development. Currently leading
+                AI engineering projects at FOREO, building end-to-end solutions with PyTorch,
+                Django, and modern ML frameworks.
               </p>
               <div className="hero-buttons">
                 <Link to="/contact" className="btn btn-primary">
@@ -72,9 +73,7 @@ const Home = () => {
               </div>
             </div>
             <div className="hero-image">
-              <div className="image-placeholder">
-                <Code style={{ fontSize: '120px', color: '#667eea' }} />
-              </div>
+              <img src="/profile.jpg" alt="Bilge Kağan Şenol" className="profile-image" />
             </div>
           </div>
         </div>
@@ -87,21 +86,21 @@ const Home = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate Computer Engineering student at Yasar University,
-                graduating in 2025. My journey in technology has led me to specialize
-                in Artificial Intelligence and Data Science, with a particular focus
-                on Natural Language Processing and Machine Learning.
+                I'm a Computer Engineering graduate from Yasar University with a strong
+                foundation in algorithms and system design. My technical journey started
+                with C programming and evolved through backend development, AI systems,
+                and deep learning applications.
               </p>
               <p>
-                I have hands-on experience in developing AI-powered chatbots, working
-                with large language models, and building full-stack applications.
-                My technical expertise spans across Python, Java, JavaScript, and C,
-                complemented by frameworks like React and Spring Boot.
+                Currently serving as AI Engineer Intern - Peer Lead at FOREO, where I lead
+                a team of 4 engineers building text-to-image and image-to-text pipelines.
+                I have extensive experience with LLMs, RAG architectures, computer vision,
+                and production-ready AI deployments.
               </p>
               <p>
-                Currently, I'm working as a Chatbot and AI Developer at Ekoten,
-                where I focus on AI model tuning and optimization to create
-                intelligent conversational systems.
+                My expertise spans Python, Django, PyTorch, and modern ML frameworks.
+                I specialize in building end-to-end AI solutions from dataset preparation
+                to deployment, with focus on scalability, maintainability, and performance.
               </p>
             </div>
             <div className="about-highlights">
@@ -150,17 +149,17 @@ const Home = () => {
           <div className="tools-section">
             <h3>Tools & Technologies</h3>
             <div className="tools-tags">
+              <span className="tool-tag">Hugging Face</span>
+              <span className="tool-tag">OpenCV</span>
+              <span className="tool-tag">Gradio</span>
+              <span className="tool-tag">Ollama</span>
+              <span className="tool-tag">AWS EC2</span>
               <span className="tool-tag">Git/GitHub</span>
-              <span className="tool-tag">NLTK</span>
-              <span className="tool-tag">Gensim</span>
-              <span className="tool-tag">Matplotlib</span>
-              <span className="tool-tag">Seaborn</span>
-              <span className="tool-tag">TensorFlow</span>
-              <span className="tool-tag">PyTorch</span>
-              <span className="tool-tag">SQL</span>
-              <span className="tool-tag">MongoDB</span>
-              <span className="tool-tag">Docker</span>
-              <span className="tool-tag">AWS</span>
+              <span className="tool-tag">PostgreSQL</span>
+              <span className="tool-tag">Linux</span>
+              <span className="tool-tag">Nginx</span>
+              <span className="tool-tag">Gunicorn</span>
+              <span className="tool-tag">REST APIs</span>
             </div>
           </div>
         </div>
@@ -176,17 +175,17 @@ const Home = () => {
                 <h3>Yasar University</h3>
                 <p className="education-degree">Bachelor of Science in Computer Engineering</p>
               </div>
-              <span className="education-year">2019 - 2025</span>
+              <span className="education-year">2020 - 2025 (Graduated)</span>
             </div>
             <div className="education-details">
-              <p><strong>Location:</strong> Izmir, Turkey</p>
-              <p><strong>Relevant Coursework:</strong></p>
+              <p><strong>Location:</strong> Ankara, Turkey</p>
+              <p><strong>Key Focus Areas:</strong></p>
               <ul>
-                <li>Natural Language Processing</li>
-                <li>Machine Learning Algorithms</li>
-                <li>Data Structures & Algorithms</li>
-                <li>Database Management Systems</li>
-                <li>Software Engineering</li>
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Computer Vision & Deep Learning</li>
+                <li>Algorithms & Data Structures</li>
+                <li>Backend Development & System Design</li>
+                <li>Database Management & Optimization</li>
               </ul>
             </div>
           </div>

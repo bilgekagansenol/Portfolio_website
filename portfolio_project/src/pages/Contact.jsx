@@ -1,37 +1,8 @@
-import React, { useState } from 'react';
-import { Email, LocationOn, GitHub, LinkedIn, Send } from '@mui/icons-material';
+import React from 'react';
+import { Email, LocationOn, GitHub, LinkedIn, Phone } from '@mui/icons-material';
 import './Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const [status, setStatus] = useState('');
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the form data to a backend
-    setStatus('Thank you for your message! I will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-    setTimeout(() => setStatus(''), 5000);
-  };
-
   const contactInfo = [
     {
       icon: <Email />,
@@ -40,15 +11,21 @@ const Contact = () => {
       link: 'mailto:bilge.kagan.senoll@gmail.com',
     },
     {
+      icon: <Phone />,
+      title: 'Phone',
+      value: '+90 507 555 53 90',
+      link: 'tel:+905075555390',
+    },
+    {
       icon: <LocationOn />,
       title: 'Location',
-      value: 'Izmir, Turkey',
+      value: 'Ankara, Turkey',
       link: null,
     },
     {
       icon: <GitHub />,
       title: 'GitHub',
-      value: 'bilgekagansenol',
+      value: 'github.com/bilgekagansenol',
       link: 'https://github.com/bilgekagansenol',
     },
     {
@@ -65,15 +42,15 @@ const Contact = () => {
         <div className="page-header">
           <h1 className="page-title">Get In Touch</h1>
           <p className="page-subtitle">
-            Let's discuss your project or just say hello
+            Let's connect and discuss opportunities
           </p>
         </div>
 
-        <div className="contact-content">
-          <div className="contact-info-section">
+        <div className="contact-content-centered">
+          <div className="contact-info-section-full">
             <h2>Contact Information</h2>
             <p className="contact-intro">
-              I'm always open to new opportunities, collaborations, or just a friendly chat.
+              I'm always open to new opportunities, collaborations, and interesting projects.
               Feel free to reach out through any of the following channels.
             </p>
 
@@ -100,80 +77,27 @@ const Contact = () => {
             </div>
 
             <div className="availability-card">
-              <h3>Availability</h3>
+              <h3>Current Status & Availability</h3>
               <p>
                 Currently open to:
               </p>
               <ul>
-                <li>Full-time opportunities</li>
-                <li>Freelance projects</li>
-                <li>Collaborations</li>
-                <li>Consulting</li>
+                <li>Full-time AI/ML Engineer positions</li>
+                <li>Backend development roles</li>
+                <li>Freelance AI projects</li>
+                <li>Technical consulting</li>
+                <li>Remote and on-site opportunities</li>
               </ul>
             </div>
-          </div>
 
-          <div className="contact-form-section">
-            <h2>Send a Message</h2>
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="form-group">
-                <label htmlFor="name">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder="John Doe"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email">Your Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  placeholder="Project Inquiry"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="6"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
-
-              <button type="submit" className="submit-button">
-                <Send /> Send Message
-              </button>
-
-              {status && <div className="form-status">{status}</div>}
-            </form>
+            <div className="cta-section">
+              <p className="cta-text">
+                Interested in working together? Let's discuss how I can contribute to your team or project.
+              </p>
+              <a href="mailto:bilge.kagan.senoll@gmail.com" className="cta-button">
+                <Email /> Send Email
+              </a>
+            </div>
           </div>
         </div>
       </div>

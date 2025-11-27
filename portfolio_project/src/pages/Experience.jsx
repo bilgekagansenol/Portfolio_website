@@ -6,35 +6,70 @@ const Experience = () => {
   const experiences = [
     {
       type: 'work',
-      company: 'Ekoten',
-      position: 'Chatbot and AI Developer',
-      location: 'Remote',
-      period: 'Current Position',
+      company: 'FOREO',
+      position: 'AI Engineer Intern – Peer Lead',
+      location: 'Stockholm, Sweden (Remote)',
+      period: 'Sep 2025 – Present',
       description:
-        'Developing and optimizing AI-powered chatbots. Working with large language models and implementing advanced NLP techniques for improved conversational AI systems.',
+        'Leading a 4-person AI engineering team, designing and implementing text-to-image and image-to-text pipelines. Building end-to-end AI systems from dataset preparation to deployment with focus on model optimization and team coordination.',
       responsibilities: [
-        'Chatbot development and implementation',
-        'AI model tuning and optimization',
-        'Integration with various messaging platforms',
-        'Performance monitoring and improvement',
+        'Team leadership and project management for AI pipelines',
+        'Built advanced T2I pipelines with Pythonic design patterns',
+        'Integrated and fine-tuned diffusion models via Hugging Face',
+        'Developed interactive Gradio dashboards for model visualization',
+        'Optimized generation speed and runtime efficiency',
+        'Cross-functional collaboration with designers and product team',
       ],
-      technologies: ['Python', 'NLP', 'Machine Learning', 'LLMs'],
+      technologies: ['Python', 'Hugging Face', 'LLMs', 'Gradio', 'PyTorch', 'Diffusion Models'],
     },
     {
       type: 'work',
-      company: 'Spartacus Software Industry and Commerce Limited Company',
-      position: 'Software Engineering Intern',
-      location: 'Izmir, Turkey',
-      period: 'July 2024 - August 2024',
+      company: 'Kalıpçılar Aksesuar',
+      position: 'Freelance Full Stack Developer',
+      location: 'İzmir, Turkey (Remote)',
+      period: 'Jul 2025 – Present',
       description:
-        'Contributed to the development of an accounting ERP application focused on invoice management. Worked with database design and backend development.',
+        'Developing full-stack e-commerce platform with Django backend and React frontend. Deployed on AWS EC2 with production-ready infrastructure using Nginx and Gunicorn.',
       responsibilities: [
-        'Developed invoice management features for ERP system',
-        'Designed and implemented database schemas',
-        'Created stored procedures and optimized queries',
-        'Collaborated with senior developers on system architecture',
+        'Developed core backend APIs for e-commerce (auth, products, orders)',
+        'Built responsive UI with React and integrated REST endpoints',
+        'Deployed full-stack app on AWS EC2 with secure configuration',
+        'Implemented authentication and order management systems',
       ],
-      technologies: ['Oracle PL/SQL', 'Database Design', 'Backend Development'],
+      technologies: ['Django', 'Django REST Framework', 'React', 'AWS EC2', 'Nginx', 'PostgreSQL'],
+    },
+    {
+      type: 'work',
+      company: 'Ekoten Tekstil',
+      position: 'Backend Developer & Local AI Fine-Tuning Intern',
+      location: 'Ankara, Turkey',
+      period: 'Mar 2025 – May 2025',
+      description:
+        'Developed backend services for AI-powered chatbot platform. Implemented RAG architecture and fine-tuned local LLM models using Ollama for on-premise inference.',
+      responsibilities: [
+        'Developed Django REST Framework APIs for chatbot platform',
+        'Implemented RAG workflows with embedding pipelines',
+        'Fine-tuned local LLM models using Ollama',
+        'Built preprocessing scripts for document indexing',
+        'Packaged chatbot into deployable backend module',
+      ],
+      technologies: ['Django REST Framework', 'Python', 'Ollama', 'RAG', 'LLMs'],
+    },
+    {
+      type: 'work',
+      company: 'Spartacus Software',
+      position: 'Software Intern',
+      location: 'Ankara, Turkey',
+      period: 'Jul 2024 – Aug 2024',
+      description:
+        'Contributed to accounting ERP system development with focus on invoice management. Designed database schemas and optimized SQL queries for transaction workflows.',
+      responsibilities: [
+        'Designed database schemas for invoice management',
+        'Wrote stored procedures in Oracle PL/SQL',
+        'Contributed to core ERP module features',
+        'Optimized queries and improved data integrity',
+      ],
+      technologies: ['Oracle PL/SQL', 'Database Design', 'ERP Systems'],
     },
   ];
 
@@ -106,27 +141,27 @@ const Experience = () => {
           <div className="achievements-grid">
             <div className="achievement-card">
               <h3>Programming Languages</h3>
-              <p>Python (Advanced) • Java (Intermediate) • JavaScript (Intermediate) • C (Advanced)</p>
+              <p>Python • JavaScript • C • SQL</p>
             </div>
             <div className="achievement-card">
               <h3>AI & Machine Learning</h3>
-              <p>Natural Language Processing • Machine Learning Algorithms • Deep Learning • Model Optimization</p>
+              <p>LLMs • RAG Pipelines • LoRA Fine-Tuning • Diffusion Models • Computer Vision • PyTorch • OpenCV</p>
             </div>
             <div className="achievement-card">
-              <h3>Web Development</h3>
-              <p>React • Spring Boot • RESTful APIs • Full-Stack Development</p>
+              <h3>Backend & Full-Stack</h3>
+              <p>Django • Django REST Framework • React.js • AWS EC2 • Nginx • Gunicorn • PostgreSQL</p>
             </div>
             <div className="achievement-card">
-              <h3>Tools & Technologies</h3>
-              <p>Git/GitHub • NLTK • Gensim • Matplotlib • Seaborn • SQL • Docker</p>
+              <h3>AI Tools & Frameworks</h3>
+              <p>Hugging Face • Gradio • Ollama • Embedding Models • Prompt Engineering • Model Deployment</p>
             </div>
             <div className="achievement-card">
-              <h3>Languages</h3>
-              <p>Turkish (Native) • English (C1)</p>
+              <h3>Leadership & Management</h3>
+              <p>Team Leadership • Project Management • Task Delegation • Cross-functional Collaboration</p>
             </div>
             <div className="achievement-card">
-              <h3>Soft Skills</h3>
-              <p>Problem Solving • Team Collaboration • Quick Learning • Project Management</p>
+              <h3>DevOps & Tools</h3>
+              <p>Git/GitHub • Linux • REST APIs • Virtual Environments • Cloud Deployment</p>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="navbar-content">
           <Link to="/" className="navbar-logo">
             <span className="logo-name">Bilge Kağan Şenol</span>
-            <span className="logo-title">AI & Data Science Developer</span>
+            <span className="logo-title">AI Engineer & Computer Engineer</span>
           </Link>
 
           <ul className="navbar-menu">
